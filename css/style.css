@@ -19,7 +19,7 @@ body {
 } */
 
 .hero-section {
-  background: linear-gradient(135deg, #046b4f, #0a8f63);
+  background: linear-gradient(135deg, #2e314d, #0a8f63);
   min-height: 65vh;
   position: relative;
   overflow: hidden;
@@ -165,7 +165,7 @@ body {
   gap: 8px;
 }
 
-/* Style spécifique pour les cartes de la section 4 (Actualités) */
+
 .card-overlay-news {
   align-items: center;
   justify-content: center;
