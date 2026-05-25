@@ -1,0 +1,119 @@
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.services-banner {
+    background: url('../img/site-touristique.png');
+    background-size: cover;
+    background-position: center;
+    height: 500px; 
+    margin-top: 100px;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+.services-banner h1 {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    letter-spacing: 1px;
+}
+
+.services-search-icon {
+    font-size: 2.5rem;
+    color: #FFFFFF;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease;
+}
+
+.services-search-icon:hover {
+    color: #008349; 
+    transform: scale(1.1);
+}
+
+.services-title-wrapper {
+    gap: 150px; 
+}
+
+.services-line {
+    max-width: 800px;
+    width: 100%;
+    height: 5px;
+    display: block;
+    margin: 0 auto;
+}
+
+.hero-wave {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    line-height: 0;
+}
+
+.hero-wave svg {
+    display: block;
+    width: 100%;
+    height: 100px;
+}
+
+.hero-wave path {
+    fill: #ffffff;
+}
+
+/*  section2 */
+.touristic-section {
+    background: #fff;
+}
+
+.tour-card {
+    background: #fff;
+    transition: box-shadow 0.25s ease, transform 0.25s ease;
+}
+
+.tour-card h2 {
+    color: #008349;
+    letter-spacing: 0.5px;
+    font-size: 28px;
+}
+
+.tour-card p { color: #333; line-height:1.6; }
+
+@media (max-width: 767px) {
+    .tour-card .row > [class*="col-"] { text-align: left; }
+    .tour-card img { height: 200px !important; }
+    .tour-card h2 { font-size: 20px; }
+    .services-banner h1 {
+        font-size: 1.75rem !important; 
+    }
+    .services-title-wrapper {
+        gap: 20px;
+    }
+}
+
+
+.tour-border{
+    border: 2px solid #008349;
+    border-radius: 12px;
+    padding: 12px;
+    margin-bottom: 50px;
+}
+
+.pagination .page-link {
+    color: #000; 
+    background-color: transparent;
+    border: none; 
+    font-weight: 500;
+}
+
+
+.pagination .page-link:focus {
+    background-color: transparent;
+    color: #008349; 
+    box-shadow: none; 
+}
+
+.pagination .page-item.active .page-link {
+    background-color: transparent;
+    color: #008349;
+    font-weight: bold;
+}

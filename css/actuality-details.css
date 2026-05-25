@@ -1,0 +1,209 @@
+.services-banner {
+    background: url('../img/actuality-details.png');
+    background-size: cover;
+    background-position: center;
+    height: 500px; 
+    margin-top: 100px;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+.services-banner h1 {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    letter-spacing: 1px;
+}
+
+.hero-wave {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    line-height: 0;
+}
+
+.hero-wave svg {
+    display: block;
+    width: 100%;
+    height: 100px;
+}
+
+.hero-wave path {
+    fill: #ffffff;
+}
+
+/* section2*/
+
+.actuality-content-section {
+    padding: 50px 0;
+}
+
+.actuality-content-section .container {
+    max-width: 900px;
+}
+
+
+.intro-box {
+    display: flex;
+    align-items: flex-start;
+    gap: 30px;
+    margin-bottom: 0;
+    margin-left: -210px;
+    height: 0;
+}
+
+.intro-icon {
+    flex-shrink: 0;
+    width: 60px;
+    height: 60px;
+    background-color: #008349;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 24px;
+    transition: all 0.3s ease;
+}
+
+.intro-icon:hover {
+    background-color: #006b3a;
+    transform: scale(1.05);
+}
+
+.intro-text {
+    flex: 1;
+}
+
+.intro-text p {
+    font-size: 15px;
+    line-height: 1.8;
+    color: #333333;
+    text-align: justify;
+    margin: 0;
+}
+
+.content-block {
+    margin-bottom: 50px;
+    margin-top: 0;
+}
+
+.section-title {
+    color: #008349;
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    margin-top: 0;
+}
+
+.section-text {
+    font-size: 15px;
+    line-height: 1.8;
+    color: #333333;
+    text-align: justify;
+    margin: 0;
+}
+
+
+/* Section 3 */
+
+.autres-section {
+    padding-bottom: 80px;
+}
+
+.autres-card {
+    height: 360px;
+    background-position: center;
+    background-size: cover;
+    border-radius: 8px;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.autres-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+.card-gradient-overlay {
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+}
+
+.autres-card-content {
+    position: absolute;
+    inset: 0;
+    color: white;
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    text-align: center;
+    gap: 5px;
+    z-index: 2;
+}
+
+.autres-meta {
+    font-size: 12px;
+    opacity: 0.9;
+    margin: 0;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+}
+
+.autres-title {
+    font-size: 22px;
+    margin: 0;
+    font-weight: 700;
+    line-height: 1.4;
+}
+
+.autres-excerpt {
+    margin: 0;
+    font-size: 14px;
+    opacity: 0.95;
+    line-height: 1.5;
+}
+
+@media (max-width: 768px) {
+    .intro-box {
+        flex-direction: column;
+        align-items: flex-start;
+        text-align: left;
+        margin-left: 0;
+        height: auto;
+        margin-bottom: 30px;
+    }
+
+    .intro-text p {
+        text-align: left;
+    }
+
+    .section-text {
+        text-align: left;
+    }
+
+    .actuality-content-section {
+        padding: 20px 0;
+    }
+
+    .autres-section {
+        padding-bottom: 40px;
+    }
+
+    .autres-card {
+        height: 280px;
+    }
+
+    .autres-title {
+        font-size: 18px;
+    }
+
+    .autres-excerpt {
+        font-size: 13px;
+    }
+}

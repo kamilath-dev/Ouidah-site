@@ -1,0 +1,65 @@
+body { font-family: 'Montserrat', sans-serif; }
+
+.news-page {
+  margin-top: 150px;
+}
+
+.section-heading { font-weight: 700; letter-spacing: 0.5px; }
+
+.news-hero {
+  height: 360px;
+  background-position: center;
+  background-size: cover;
+  border-radius: 4px;
+  position: relative;
+  overflow: hidden;
+}
+
+.news-hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(0,0,0,0.15) 0%, rgba(0,0,0,0.55) 60%);
+  display: flex;
+  align-items: flex-end;
+}
+
+.news-hero-content {
+  color: white;
+  padding: 28px 36px;
+  max-width: 60%;
+}
+
+.news-meta { font-size: 13px; opacity: 0.95; margin-bottom: 8px; }
+.news-title { font-size: 28px; margin: 0 0 8px; font-weight: 700; }
+.news-excerpt { margin: 0; opacity: 0.95; }
+
+.news-card {
+  height: 320px;
+  background-position: center;
+  background-size: cover;
+  border-radius: 4px;
+  position: relative;
+  overflow: hidden;
+}
+
+.card-overlay {
+  position: absolute;
+  inset: 0;
+  color: white;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  text-align: center;
+}
+
+.card-title { font-size: 18px; margin: 0 0 6px; font-weight: 700; }
+.card-excerpt { margin: 0; font-size: 13px; opacity: 0.95; }
+
+@media (max-width: 768px) {
+  .news-hero { height: 220px; }
+  .news-hero-content { max-width: 100%; padding: 18px; }
+  .news-title { font-size: 20px; }
+  .news-card { height: 220px; }
+}
